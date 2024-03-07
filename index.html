@@ -3,6 +3,7 @@
 <head>
 	<title>Full Sail Landing Page Test</title>
 	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,15 +16,111 @@
 
   <!-- Favicon -->
   <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-  <h1 style="font-family:Open Sans; font-weight: 400">Hello</h1>
-  <h1 style="font-family:Open Sans; font-weight: 300">Hello</h1>
-  <h1 style="font-family:Roboto Slab; font-weight: 400; letter-spacing: 0px">Request Info</h1>
-  <h1 class='sass'>Hello</h1>
+  <header>
+    <div class='header'>
+      <img class='left-padding' src="./assets/Logo - Full Color - Mobile.svg" alt="Full Sail logo"/>
+    </div>
+    <div class='header-image'>
+      <div class='left-padding header-top-padding'>
+        <h1 class='primary-headline'>Primary Headline</h1>
+        <h2 class='secondary-headline'>Secondary Headline</h2>
+      </div>
 
+    </div>
 
-  <!-- jQuery & Bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </header>
+
+  <main>
+    <section>
+      <form class='request-info-form' action="index.html" method="post">
+        <h1 class='request-header'>Request Info</h1>
+        <p>Fill out the form for more information or call us at <span class='highlight'>844.716.1492</span>.</p>
+        <hr class='divider' />
+          <div style="position: relative; padding-bottom: 9.21px">
+            <label for="" class='form-label'>SELECT ONE: <span class='asterisk'>*</span></label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Choose a program</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div style="position: relative">
+            <label for="" class='form-label'>YOUR NAME <span class='asterisk'>*</span></label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Your Name</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <label for="" class='form-label form-label-check'>CHECKBOXES</label>
+          <div class="form-check">
+            <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label checkbox-label" for="flexCheckDefault">
+              Box 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label checkbox-label" for="flexCheckDefault">
+              Box 2
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label checkbox-label" for="flexCheckChecked">
+              Box 3
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-primary submit-button">SUBMIT REQUEST</button>
+      </form>
+    </section>
+
+    <section class="content-container">
+      <p style='max-width: 760px'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus risus metus. Aliquam blandit magna nec turpis mattis accumsan. Mauris eu semper neque. Mauris fringilla, mauris sit amet viverra hendrerit, purus lorem vestibulum ligula, at consequat urna lorem at felis. Phasellus accumsan pulvinar ipsum, <b>quis semper dui mollis ac.</b> Donec et turpis ut sem lobortis blandit in vel neque. Quisque luctus nisl vel dolor rutrum tempor. Donec iaculis facilisis lectus, in pellentesque risus sollicitudin vel. In in augue sed lectus semper feugiat. Nunc a dapibus sem. In ac ultricies sapien.
+      </p>
+      <div class="item-detail">
+        <h1 class="item-detail-header">Item Detail</h1>
+        <p style='max-width: 752px'>
+          Aliquam lacus sem, lobortis et risus sed, congue egestas nulla. Morbi vel leo tellus. Phasellus elit sapien, varius vel nunc ac, fringilla ullamcorper massa. Vestibulum faucibus rutrum felis, a sollicitudin est rhoncus quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget arcu quis ante tincidunt dignissim.
+        </p>
+      </div>
+      <div class="addtnl-info">
+        <img class='addtnl-info-img' src="./assets/Icon - Disclaimer - Orange.svg" alt="Addtnl info icon"><p class='addtnl-info-text'>Request Additional Information</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class='footer-content-container'>
+      <div>
+        <img class='white-logo' src="./assets/Logo - White.svg" alt="Full Sail Logo White">
+        <p class='quote'>If you’re serious about your dream, we’ll take your dream seriously.<span class='tm'>TM</span></p>
+      </div>
+      <hr class='footer-divider'/>
+      <div class="footer-text-container">
+        <p class="footer-text">For more information about Full Sail’s programs, courses, and studios, as well as details about financial aid and career development, please visit our website at www.fullsail.edu </p>
+        <p class="footer-text">3300 University Blvd - Winter Park, FL 32792 - Financial aid available for those who qualify - Career development assistance · Accredited University, ACCSC</p>
+        <p class="footer-text">Other product and company names mentioned herein may be the trademarks of their respective owners.</p>
+        <p class="footer-text">The appearance of these marks does not necessarily indicate a formalized sponsorship or affiliation with other such companies.</p>
+        <p class="footer-text">The terms “Full Sail,” “Full Sail University,” and the Full Sail logo are either registered service marks or services marks of Full Sail, LLC.</p>
+      </div>
+    </section>
+    <section class='bottom-footer'>
+      <p class='bottom-footer-text'>© 2024 Full Sail, LLC. All rights reserved.</p>
+    </section>
+  </footer>
+
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+</html>

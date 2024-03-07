@@ -1,2 +1,225 @@
-.sass
-  color: red
+$main: "Open Sans", sans-serif
+$accent: "Roboto Slab", serif
+
+//viewport height / design height
+//$HeightScaleFactor: 1080/1495
+
+html, body
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+
+p, h1
+  margin-bottom: 0
+  font-size: 16px
+  font-family: $main
+  font-weight: 400
+
+.header
+  width: 100%
+  height: 46px
+  display: flex
+  align-items: center
+
+.left-padding
+  padding-left: calc((375/1920) * 100%)
+
+.header-image
+  width: 100%
+  height: 470px
+  background-image: url('./assets/Header Image.png')
+  //background-repeat: no-repeat
+  background-size: cover
+
+.primary-headline
+  color: #FFFFFF
+  font-family: $main
+  font-size: 40px
+  font-weight: 400
+  margin: 0
+
+.secondary-headline
+  color: #FDB913
+  font-family: $main
+  font-size: 18px
+  font-weight: bold
+  margin: 0
+
+.header-top-padding
+  padding-top: 354px
+
+
+// REQUEST INFO FORM
+.request-info-form
+  width: 380px
+  height: 575px
+  position: absolute
+  top: 151px
+  left: calc((1165/1920) * 100%)
+  background-color: #FFFFFF
+  padding: 20px
+  box-shadow: 0px 3px 6px #00000029
+
+.request-header
+  font-family: $accent
+  font-size: 32px
+  font-weight: 350
+  color: #505050
+  padding-bottom: 25px
+  margin: 0
+
+.highlight
+  color: #CC4B00
+  text-decoration: underline
+  font-weight: bold
+
+.divider
+  border: 1.5px solid #FCB813
+  width: 40px
+  opacity: 1
+  margin-top: 32px
+  margin-bottom: 33px
+
+.form-label
+  font-family: $main
+  font-weight: bold
+  font-size: 14px
+  margin-bottom: 5px
+
+.form-label-check
+  padding-left: 8px
+  margin-top: 10px
+
+.asterisk
+  font-family: $main
+  color: #E65400
+  letter-spacing: -0.15px
+  font-weight: 600
+  position: absolute
+  top: 0
+  left: 90px
+
+.dropdown-border
+  border: 1px solid #D6D6D6
+
+.checkbox-label
+  font-family: $main
+  font-size: 16px
+
+.checkbox
+  border: 2px solid #505050
+  border-radius: 3px
+
+.submit-button
+  font-family: $main
+  font-size: 16px
+  font-weight: bold
+  color: #FFFFFF
+  background-color: #CC4B00
+  border: 0
+  border-radius: 0
+  padding-top: 17px
+  padding-bottom: 17px
+  display: flex
+  justify-content: center
+  width: 100%
+  height: 56px
+  margin-top: 45px
+
+// MAIN CONTENT
+.content-container
+  //padding-left: 375px
+  padding-left: calc((375/1920) * 100%)
+  // padding-right: calc((785/1920) * 100%)
+  padding-top: 40px
+
+.content
+  font-size: 16px
+  font-family: $main
+
+.item-detail
+  margin-top: 40px
+
+.item-detail-header
+  font-family: $main
+  font-size: 24px
+  font-weight: 300
+  margin-bottom: 20px
+
+.addtnl-info
+  display: flex
+  padding-top: 40px
+
+.addtnl-info-img
+  padding-right: 12.09px
+
+.addtnl-info-text
+  color: #CC4B00
+  text-decoration: underline
+  letter-spacing: 0px
+  opacity: 1
+
+// FOOTER
+.footer-content-container
+  background-color: #505050
+  height: 398px
+  display: flex
+  align-items: center
+  flex-direction: column
+  text-align: center
+  padding: 40px 375px 40px 375px
+  width: 100%
+
+.quote
+  color: #D6D6D6
+  font-family: $accent
+  font-size: 27px
+  font-weight: 100
+  letter-spacing: -0.5px
+  margin-bottom: 32px
+
+.white-logo
+  height: 24px
+  width: 214px
+  margin-bottom: 34px
+
+.footer-text-container
+  margin-top: 32px
+
+.footer-text
+  color: #FFFFFF
+  text-align: center
+  font-size: 12px
+  padding: 9.5px 0 9.5px 0
+
+.footer-divider
+  border: 1px solid #626262
+  height: 0px
+  width: calc((1170/1920) * 100%)
+
+.tm
+  vertical-align: top
+  font-size: 18px
+
+.bottom-footer
+  background-color: #454545
+  width: 100%
+  height: 55px
+  border: none
+  margin: 0
+  padding: 0
+
+.bottom-footer-text
+  color: #D6D6D6
+  font-size: 11px
+  text-align: center
+  padding: 20px 0 20px 0
+
+
+
+@media (max-width: 390px) {
+  .header-image
+    height: 220px
+    width: 390px
+}
